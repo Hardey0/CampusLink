@@ -26,7 +26,7 @@ import PlugProfilePage from "./pages/CampusPLugPages/PlugProfilePage";
 import PlugSettings from "./pages/CampusPLugPages/PlugSetting";
 
 
-import AppLayout from "./layouts/AppLayout/AppLayout";
+import AppLayout from "./layouts/appLayout/AppLayout";
 import PlugLayout from "./layouts/PlugLayout/PlugLayout";
 import "./index.css";
 
