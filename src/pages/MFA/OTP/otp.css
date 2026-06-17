@@ -1,0 +1,210 @@
+/* Otp.css */
+/* This file is ONLY for the OTP page */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+/* Make sure full height works everywhere */
+html, body, #root {
+  height: 100%;
+  width: 99.8% ;
+  margin: 0;
+  padding: 0;
+}
+
+.otp-container {
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Both panels stretch full height */
+.left-panel,
+.right-panel {
+  flex: 1;
+  min-height: 100%;
+}
+
+/* ──────────────────────────────── */
+/* RIGHT PANEL + OTP FORM */
+.right-panel {
+  background-color: white;
+  padding: 80px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.otp-form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.otp-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1D242D;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  letter-spacing: -0.03em;
+}
+
+.otp-description {
+  font-size: 14px;
+  color: #546881;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.otp-input-section {
+  margin-bottom: 30px;
+}
+
+.otp-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.otp-inputs {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start; /* or center on mobile if you prefer */
+}
+
+.otp-input {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+  color: #212121;
+  background-color: #f9f9f9;
+  transition: all 0.2s ease;
+}
+
+.otp-input:focus {
+  outline: none;
+  border-color: #212121;
+  background-color: white;
+}
+
+.otp-input:not(:placeholder-shown) {
+  background-color: white;
+}
+
+.otp-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.timer {
+  font-size: 14px;
+  color: #212121;
+  font-weight: 500;
+}
+
+.resend-btn {
+  font-size: 14px;
+  color: #212121;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.resend-btn:hover {
+  color: #000;
+}
+
+.submit-btn {
+  padding: 12px 32px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  background-color: #e5e5e5;
+  color: #999;
+}
+
+.submit-btn.active {
+  background-color: #1D242D;
+  color: white;
+}
+
+.submit-btn.active:hover {
+  background-color: #2a2a2a;
+}
+
+.submit-btn:disabled {
+  cursor: not-allowed;
+}
+
+/* ──────────────────────────────── */
+/* RESPONSIVE – OTP page only */
+@media (max-width: 768px) {
+  .right-panel {
+    padding: 60px 20px;
+    min-height: 100vh;
+  }
+
+  .otp-title {
+    text-align: center;
+  }
+
+  .otp-description {
+    text-align: center;
+  }
+
+  .otp-inputs {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .otp-input {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+
+  .otp-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-panel {
+    padding: 40px 16px;
+  }
+
+  .otp-input {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+
+  .otp-inputs {
+    gap: 8px;
+  }
+}

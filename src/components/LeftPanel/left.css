@@ -1,0 +1,67 @@
+
+.left-panel {
+  flex: 1;
+  min-height: 100%;
+  background-color: #EAEAEA;
+  padding: 80px 60px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.main-heading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 108%;
+  letter-spacing: -0.04em;
+  color: #212121;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #212121;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: 800;
+  color: #212121;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #212121;
+  line-height: 1.5;
+  max-width: 400px;
+}
+
+/* Responsive for left panel only */
+@media (max-width: 768px) {
+  .left-panel {
+    display: none;
+  }
+}
