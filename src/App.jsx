@@ -2,7 +2,7 @@ import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./context/themeContext/ThemeProvider";
 import { useState } from "react";
 import LandingPage from "./pages/LandingPage/LandingPage";
-import Marketplace from "./pages/AppPages/Marketplace/Marketplace";
+import Marketplace from "./pages/AppPages/MarketPlace/Marketplace";
 import AcademicHubPage from "./pages/AppPages/AcademicHubPage";
 import CommunityPage from "./pages/AppPages/CommunityPage";
 import MessagesPage from "./pages/AppPages/MessagesPage";
