@@ -1,7 +1,7 @@
 import { AppIcon } from "../../../../components/icons";
 import Stars from "./Stars";
 import ProductBadge from "./ProductBadge";
-import { Button } from "../../../../components/ui/button";
+import { Button } from "../../../../components/ui/Button";
 
 /**
  * Grid-view product card.

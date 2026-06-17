@@ -1,6 +1,6 @@
 import { AppIcon } from "../../../../components/icons";
 import Stars from "./Stars";
-import { Button } from "../../../../components/ui/button";
+import { Button } from "../../../../components/ui/Button";
 
 /**
  * List-view product row. Used when the user switches to the list layout toggle.
